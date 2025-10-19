@@ -9,7 +9,8 @@ import { RiNodejsLine } from "react-icons/ri";
 import { ReactTyped } from "react-typed";
 
 
-import pic from "../../public/sah.webp"
+import pic from "../../public/free.jpeg"
+import resume from "../../public/resume.pdf"
 export default function Home() {
   
   return (
@@ -59,12 +60,30 @@ export default function Home() {
             </div>
        </div>
         </div>
-        <div className='md:w-1/2 order-1 md:order-2'>
-        <img className="md:w-[450px] md:h-[450px] rounded-full md:ml-52 md:mt-20 " src={pic} alt="" />
+        <div className='md:w-1/2 order-1 md:order-2 flex flex-col items-center justify-center'>
+          <img 
+            className="w-40 h-40 md:w-72 md:h-72 rounded-full object-cover shadow-lg border-4 border-blue-200 transition-transform duration-300 hover:scale-105" 
+            src={pic} 
+            alt="Profile" 
+          />
+          <a
+            href="resume.pdf"
+            download
+            className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition-colors duration-200 font-semibold text-lg"
+          >
+            Download Resume
+          </a>
         </div>
         </div>
     </div>
-
+    <div className="flex justify-center mt-8">
+      <a
+        href="#Contact"
+        className="px-8 py-3 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full shadow-lg hover:from-blue-600 hover:to-green-600 transition-colors duration-200 font-bold text-xl"
+      >
+        Contact Me
+      </a>
+    </div>
     <hr />
     </>
   )
